@@ -1,0 +1,9 @@
+
+import qrcode
+
+def generar_qr(texto):
+  qr=qrcode.make(texto)
+  qr.save('qr_code.png')
+
+texto=input("Texto1: ")
+generar_qr(texto)
